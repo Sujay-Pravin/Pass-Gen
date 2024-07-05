@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Password Gen</title>
+        <link rel="icon" href="/file.png" type="icon">
+        <link href="/style.css" rel="stylesheet">
+
+
+    </head>
+    <body>
+        <div>
+            <h1>Get a <br> <span id="pass">random Password</span></h1>
+            <p>Avoid using the same weak&nbsp;password for multiple&nbsp;accounts. </p>
+        </div>
+            <div class = "turn">
+                <h2>Symbols :</h2>
+                <button id="sym-btn">ON</button> 
+                <h2 class="appear">:</h2>
+                <input type="number" class="appear" id="symbox" placeholder="count &lt; 20" min="0" max="10">
+
+            </div>
+            <div class = "turn">
+                <h2>Numbers :</h2>
+                <button id="num-btn">ON</button> 
+                <h2 class="appear">:</h2>
+                <input type="number" class="appear" id="numbox" placeholder="count &lt; 20" min="0" max="10">        
+            </div>
+            <div class = "turn">
+                <h2>Alpha :</h2>
+                <button id="alp-btn">ON</button>         
+            </div>
+           
+        <div>
+            <input  id="length" placeholder="6 &lt; length &lt; 20" type="number" min="6" max="20">
+            <button id="generate">GENERATE NEW</button>
+            <p id="erro"></p>
+        </div><hr>
+        
+        <div>
+            <ul id = "ul-el">
+                
+            </ul>
+        </div>
+
+
+    </body>
+    <script src="/code.js" defer></script>
+</html>
